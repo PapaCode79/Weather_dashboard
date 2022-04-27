@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <title>Document</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" />
+        
+    </head>
+    <body>
+        <div>
+            <header class=" ">
+                <h1><strong>Local Daily Weather News</strong></h1>
+            </header>
+            <nav class="container">
+                <div class="row align-items-center py-2">
+                    <div class="input-group col-sm">
+                        <span class="input-group-text" id="badic-addon1">Lat</span>
+                        <input
+                         type="text"
+                         class="form-control"
+                         inputmode="numeric"
+                         id="latitude"
+                         placeholder="latitude"
+                         aria-label="latitude"
+                         aria-describedby="basice-addon1"
+                         value="42.98" />
+                    </div>
+                </div>
+                <div class="input-group col-sm">
+                  <span class="input-group-text" id="basic-addon1">Lon</span>
+                    <input
+                    type="text"
+                        class="form-control"
+                        inputmode="numeric"
+                        id="longitude"
+                        placeholder="longitude"
+                        aria-label="longitude"
+                        aria-describedby="basice-addon1"
+                        value="-81.23" />
+                </div>
+                <div class="row align-items-center py-2">
+                 <div class="col-auto">
+                     <button id="btnGet" type="button" class="btn btn-primary">Get Weather</button> 
+                     <button id="btnCurrent" type="button" class="btn btn-primary">Use current Location</button> 
+                </div>
+               
+                </div>
+            </nav>
+        </div>
+            <main class="contenaire">
+                <h2>Weather Cast</h2>
+                <!--results for the Weather data-->
+                <div class="weather row d-flex justify-content-center">    
+                </div>
+            </main>
+            <footer class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img src="http://openweathermap.org/img/wn/10d.png" alt="demo icon" />
+                        <span>10d.png</span>
+                    </div>
+                    <div class="col">
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="demo icon" />
+                        <span>10d@2x.png</span>
+                    </div>
+                    <div class="col">
+                        <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="demo icon" />
+                        <span>10d@4x.png</span>
+                    </div>
+                </div>
+                <script src="./script.js"></script>
+            </footer>
+        
+    </body>
