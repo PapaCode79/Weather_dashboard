@@ -12,8 +12,11 @@
     <body>
         <div>
             <header class=" ">
-                <h1><strong>Local Daily Weather News</strong></h1>
+                <h1 class="text-center"><strong>Local Daily Weather News</strong></h1>
             </header>
+
+            <!---Get the Weather Condition by Lat and lon-->
+            
             <nav class="container">
                 <div class="row align-items-center py-2">
                     <div class="input-group col-sm">
@@ -41,10 +44,31 @@
                         aria-describedby="basice-addon1"
                         value="-81.23" />
                 </div>
+                
+                <div class="col-auto m-3"><button id="btnGet" type="button" class="btn btn-primary">Get Weather</button> 
+                     <button id="btnCurrent" type="button" class="btn
+                      btn-primary">Use current Location</button></div>
+                      <h3 class="or text-center m-4">-OR-</h3>
+
+                      <!--Searching Weather by a City Name-->
+
+                    <div class="input-group col-sm">
+                  <span class="input-group-text" id="basic-addon1">city</span>
+                    <input
+                    type="text"
+                        class="form-control"
+                        inputmode="numeric"
+                        id="cityName"
+                        placeholder="cityName"
+                        aria-label="CityName"
+                        aria-describedby="basice-addon1"
+                        value="New York" />
+                </div>
                 <div class="row align-items-center py-2">
                  <div class="col-auto">
-                     <button id="btnGet" type="button" class="btn btn-primary">Get Weather</button> 
-                     <button id="btnCurrent" type="button" class="btn btn-primary">Use current Location</button> 
+                     
+                     
+                      <button class=" btn ml-2 search-by-city btn-primary">Search By City</button> 
                 </div>
                
                 </div>
@@ -59,16 +83,16 @@
             <footer class="container">
                 <div class="row align-items-center">
                     <div class="col">
-                        <img src="http://openweathermap.org/img/wn/10d.png" alt="demo icon" />
-                        <span>10d.png</span>
+                        <img src="http://openweathermap.org/img/wn/01d.png" alt="demo icon" />
+                        <span></span>
                     </div>
                     <div class="col">
-                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="demo icon" />
-                        <span>10d@2x.png</span>
+                        <img src="http://openweathermap.org/img/wn/13d@2x.png" alt="demo icon" />
+                        <span></span>
                     </div>
                     <div class="col">
                         <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="demo icon" />
-                        <span>10d@4x.png</span>
+                        <span></span>
                     </div>
                 </div>
                 <script src="./script.js"></script>
