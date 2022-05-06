@@ -38,7 +38,9 @@
 
 * The URL of the GitHub repository. 
 
+## Screenshot
 
+![image](./screenshot.png)
 
 ## Contributors
 
